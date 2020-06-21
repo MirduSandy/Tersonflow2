@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.8 (day01_python语言基础)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="day03_Matplotlib数据可视化" />
+    <orderEntry type="module" module-name="day02_Numpy科学计算库" />
+    <orderEntry type="module" module-name="day02_Numpy科学计算库" />
+    <orderEntry type="module" module-name="day03_Matplotlib数据可视化" />
+    <orderEntry type="module" module-name="day04_数字图像基础" />
+  </component>
+</module>
