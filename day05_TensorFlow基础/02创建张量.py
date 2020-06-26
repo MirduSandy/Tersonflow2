@@ -91,3 +91,63 @@ print(tf.is_tensor(na))
 # isinstance()函数
 print(isinstance(ta, tf.Tensor))
 print(isinstance(na, np.ndarray))
+
+# 创建全0张量和全1张量
+print(" 全0张量1：", tf.zeros(shape=(2, 1), dtype=tf.float64))
+print(" 全1张量：", tf.ones(shape=(2, 1)))
+
+#  创建元素相同的张量---tf.fill() 函数
+# tf.fill( dims, value )
+# 形状：dims   填充的数字：value
+#  fill()函数没有dtype参数， 根据value参数自动判断数据类型
+print(tf.fill((3, 3), 9))
+
+# 创建元素值都相同的张量—— tf.constant()函数
+print(tf.constant(value=8, shape=(3, 3)))
+
+#  创建随机数张量---正态分布
+# tf.random.normal(shape, mean, stddev, dtype)
+# tf.random.normal(形状, 均值, 标准差, 数据类型，默认为32位浮点数)
+a = tf.random.normal((3, 3, 3), mean=0.0, stddev=2.0)
+print(a)
+
+# 创建随机数张量——截断正态分布
+print(tf.random.truncated_normal(shape=(3, 3), mean=0, stddev=2.0))
+# n 返回一个截断的正态分布
+# n 截断的标准是2倍的标准差
+
+# 设置随机种子——tf.random.set_seed()函数
+# 设置随机种子，可以产生同样的随机数张量
+print(tf.random.set_seed(8))
+print(tf.random.normal(shape=(2, 2)))
+
+# 创建均匀分布张量——tf.random.uniform()函数
+# tf.random.uniform(shape,minval, maxval, dtype)
+print(tf.random.uniform(shape=(3, 3), minval=0, maxval=10, dtype='int32'))
+
+# 随机打乱——tf.random.shuffle()函数
+# 1.  参数为张量
+x = tf.constant([[1, 2], [3, 4]])  #tf.convert_to_tensor()
+print(tf.random.shuffle(x))
+# 2. 参数为python列表
+print(tf.random.shuffle([1, 2, 3, 4, 5, 6]))
+# 3.参数为Numpy数组
+y = np.arange(6)
+print(tf.random.shuffle(y))
+
+#  创建序列---tf.range()
+# tf.range(起始值start，结束数字limit，步长delta,dtype)  前闭后开【  ）
+print(tf.range(10, delta=2))   #起始值默认为0
+print(tf.range(1, 10, delta=2))
+print(tf.range(10))
+
+# Tensor对象的属性——维度ndim、形状shape、类型dtype
+print(x.dtype, x.shape, x.ndim)
+
+# 获得Tensor对象的形状、元素总数和维度
+print(tf.shape(x), tf.size(x), tf.rank(x))
+
+# 张量和NumPy数组
+# n 在TensorFlow中，所有的运算都是在张量之间进行的 NumPy数组仅仅是作为输入和输出来使用
+# n 张量可以运行于CPU，也可以运行于GPU和TPU 而NumPy数组只能够在CPU中运行
+
