@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/day01_python语言基础.iml" filepath="$PROJECT_DIR$/.idea/day01_python语言基础.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../day02_Numpy科学计算库/.idea/day02_Numpy科学计算库.iml" filepath="$PROJECT_DIR$/../day02_Numpy科学计算库/.idea/day02_Numpy科学计算库.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../day03_Matplotlib数据可视化/.idea/day03_Matplotlib数据可视化.iml" filepath="$PROJECT_DIR$/../day03_Matplotlib数据可视化/.idea/day03_Matplotlib数据可视化.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../day04_数字图像基础/.idea/day04_数字图像基础.iml" filepath="$PROJECT_DIR$/../day04_数字图像基础/.idea/day04_数字图像基础.iml" />
+    </modules>
+  </component>
+</project>
